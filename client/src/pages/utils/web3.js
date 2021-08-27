@@ -11,6 +11,7 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
     `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`
   );
 
+  //uncomment if using local development Ganache blockchain
   // const provider = new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545");
   web3 = new Web3(provider);
   console.log("No web3 instance injected, using Local web3.");
