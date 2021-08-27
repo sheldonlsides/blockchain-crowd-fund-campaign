@@ -84,8 +84,6 @@ contract("Campaign", async (accounts) => {
 
     const summary = await campaign.getSummary();
 
-    console.log(summary);
-
     let recipientOldBalance = await web3.eth.getBalance(recipient);
     recipientOldBalance = web3.utils.fromWei(recipientOldBalance, "ether");
 
@@ -94,9 +92,6 @@ contract("Campaign", async (accounts) => {
 
     let recipientNewBalance = await web3.eth.getBalance(recipient);
     recipientNewBalance = web3.utils.fromWei(recipientNewBalance, "ether");
-
-    console.log(recipientOldBalance);
-    console.log(recipientNewBalance);
 
     assert(recipientNewBalance > recipientOldBalance);
   });
