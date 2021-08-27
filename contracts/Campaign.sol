@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.1;
 
-// import "@openzeppelin/contracts/access/Ownable.sol";
-
 contract CampaignFactory {
     address[] public deployedContracts;
 
@@ -143,12 +141,4 @@ contract Campaign {
         );
         _;
     }
-
-    // function renounceOwnership() public view override onlyOwner {
-    //     revert("You can't renounceOwnership in this smart contract");
-    // }
-
-    // function transferOwnership(address) public view override onlyOwner {
-    //     revert("You can't transfer Ownership of this smart contract");
-    // }
 }
