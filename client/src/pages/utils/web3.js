@@ -7,11 +7,7 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   window.ethereum.request({ method: "eth_requestAccounts" });
   web3 = new Web3(window.ethereum);
 } else {
-  const provider = new Web3.providers.HttpProvider(
-    "https://rinkeby.infura.io/v3/41edc7ec7a8a4e2e8d8247650611844d"
-  );
-
-  // const provider = new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545");
+  const provider = new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545");
   web3 = new Web3(provider);
   // console.log("No web3 instance injected, using Local web3.");
 }
