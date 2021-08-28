@@ -11,3 +11,21 @@ This example project allows you to create a crowdfunded request using the Ethere
 All request, approvals and payment finalization is managed and tracked completely on the Ethereum blockchain via a Ethereum Solidity Smart Contract.
 
 ## Project technology stack
+
+This project uses a Truffle project as it's framework. If you aren't familiar with Truffle you can get an overview here https://www.trufflesuite.com/truffle
+
+There are two key components to this project, which are the smart contract project and web application client.
+
+#### Smart Contract
+
+The test and code for the smart contract project are in the following folders:
+
+- **contracts**
+- **migrations** - specific to the Truffle Suite to deploy the Ethereum smart contract to the blockchain
+- **test** - contains the test for testing the smart contract
+
+#### Web App
+
+The web app is developed using Next.js (React Framework) https://nextjs.org/
+
+The web application for the project can be found in the **_client/src_** folder
