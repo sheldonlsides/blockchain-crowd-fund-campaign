@@ -55,7 +55,6 @@ function CampaignDetails({ summaryObject }) {
       },
     ];
 
-    console.log(items);
     return <Card.Group items={items} />;
   }
 }
@@ -79,6 +78,7 @@ export async function getStaticProps({ params }) {
     manager: summary[4],
   };
 
+  console.log(summaryObject);
   return {
     props: { summaryObject },
     revalidate: 10,

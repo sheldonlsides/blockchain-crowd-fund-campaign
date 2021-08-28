@@ -30,7 +30,7 @@ function CampaignIndex({ campaigns }) {
   }
 }
 
-export async function getStaticProps(ctx) {
+export async function getStaticProps() {
   const campaigns = await factory.methods.getDeployedContracts().call();
   return {
     props: {

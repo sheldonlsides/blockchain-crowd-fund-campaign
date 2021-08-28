@@ -6,6 +6,7 @@ import CampaignFactory from "../../contracts/CampaignFactory.json";
 //0x307A7Ab3ba1c517756aD2b3d04B6599Eae257876 - rinkeby
 const instance = new web3.eth.Contract(
   CampaignFactory.abi,
+  //You will place your smart contract address here
   "0x307A7Ab3ba1c517756aD2b3d04B6599Eae257876"
 );
 
